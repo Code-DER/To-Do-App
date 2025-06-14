@@ -1,3 +1,6 @@
+#ifndef TODOLIST_H
+#define TODOLIST_H
+
 #include <string>
 #include <vector>
 #include "task.h"
@@ -5,7 +8,7 @@ using namespace std;
 
 class toDoList {
     private:
-        vector<task> tasks;
+        vector<Task> tasks;
 
     public:
 
@@ -14,3 +17,5 @@ class toDoList {
         void markTaskDone(int index);
         void listTasks() const;
 };
+
+#endif

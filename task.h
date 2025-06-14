@@ -1,17 +1,21 @@
+#ifndef TASK_H
+#define TASK_H
+
 #include <string>
 using namespace std;
 
-class task {
+class Task {
     private:
         string title;
         bool isDone;
     public:
         // Constructor
-        task(string title);
+        Task(string title);
 
         // Methods
-
         void markDone();
-        bool getStatus();
-        string getTitle();
+        bool getStatus() const;
+        string getTitle() const;
 };
+
+#endif
